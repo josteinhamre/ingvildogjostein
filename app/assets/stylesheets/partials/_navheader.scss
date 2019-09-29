@@ -1,7 +1,7 @@
 .navheader {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('https://res.cloudinary.com/lightglance/image/upload/v1569682008/Blomster_til_web_ferdig_v5_u41t1v.jpg');
+  background-image: url('https://res.cloudinary.com/lightglance/image/upload/v1569761988/Blomster_til_web_ferdig_v6_tnzfjd.jpg');
   width: 100%;
   padding-top: 260px;
 }
@@ -12,12 +12,27 @@
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 
-.navheader .tabbar li {
+.navheader .tabbar .tablinks {
   display: inline;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.navheader .tabbar .tablinks:hover {
+  transform: scale(1.02);
+}
+
+.navheader .tabbar li:first-child,
+.navheader .tabbar li:last-child {
+  background-image: url(https://res.cloudinary.com/lightglance/image/upload/v1569763819/line_gdcy6k.jpg);
+  background-repeat: repeat-x;
+  opacity: .4;
+  width: 9%;
+  height: .8rem;
 }
 
 .active-tab {
@@ -28,5 +43,17 @@
   .navheader {
     padding-top: 34vw;
 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navheader {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navheader {
+    font-size: .5rem;
   }
 }
