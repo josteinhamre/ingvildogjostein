@@ -1,1 +1,22 @@
-// Specific CSS for your home-page
+.container {
+  background-color: white;
+  text-decoration: none;
+  padding-bottom: 200px;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.tabcontent {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.active {
+  display: flex;
+}

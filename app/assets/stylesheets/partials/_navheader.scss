@@ -1,0 +1,32 @@
+.navheader {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/lightglance/image/upload/v1569682008/Blomster_til_web_ferdig_v5_u41t1v.jpg');
+  width: 100%;
+  padding-top: 260px;
+}
+
+.navheader .tabbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.navheader .tabbar li {
+  display: inline;
+  cursor: pointer;
+}
+
+.active-tab {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .navheader {
+    padding-top: 34vw;
+
+  }
+}
