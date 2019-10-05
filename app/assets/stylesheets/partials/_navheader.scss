@@ -15,15 +15,33 @@
   align-items: center;
 }
 
+.tablinks::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.tablinks.active {
+  font-weight: 600;
+}
+
 
 .navheader .tabbar .tablinks {
   display: inline;
   cursor: pointer;
-  transition: 0.4s;
+  transition: .5s;
 }
 
 .navheader .tabbar .tablinks:hover {
   transform: scale(1.02);
+}
+
+.navheader .tabbar .tablinks.active:hover {
+  transform: scale(1.0);
 }
 
 .navheader .tabbar li:first-child,
@@ -35,9 +53,6 @@
   height: .8rem;
 }
 
-.active-tab {
-  font-weight: bold;
-}
 
 @media screen and (max-width: 800px) {
   .navheader {
